@@ -1,0 +1,33 @@
+<div class="container burgerWrapper">
+  <div class="row">
+    <div class="col-6 freshMade">
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li>{{this.burger_name}}<button class="btn btn-outline-dark devouredBurger" value={{ this.id }}>Devour</button>
+        </li>
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-6">
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        <li>{{this.burger_name}}</li>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="createBurger">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" id="burgerMenu" placeholder="Create your Burger">
+    <div class="input-group-append">
+      <button class="btn btn-dark" id="newBurger" type="button">Create Burger</button>
+    </div>
+  </div>
+</div>

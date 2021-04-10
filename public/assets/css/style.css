@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(88, 182, 11);
+  }
+  
+  .jumbotron {
+    text-align: center;
+  }
+  
+  .img {
+    background:url('./burger.png') no-repeat center center fixed;
+    width:1200px; 
+    height:500px;
+    border: 5px solid rgba(94, 3, 3, 0.74);
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ececf5;
+  }
+  
+  .createBurger {
+    width: 50%;
+    margin-left: 25%;
+  }
+  
+  .presentBurger {
+    width: 60%;
+    margin-left: 20%;
+  }
+  
+  .devouredBurger {
+    float: right;
+    height: 30px;
+    justify-content: center;
+  }
+  
+  .burgerwrapper {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .freshMade {
+    line-height: 45px;
+  }
